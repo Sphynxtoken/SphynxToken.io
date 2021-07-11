@@ -1,0 +1,180 @@
+/*GLOBALS*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*,:after,:before {
+    box-sizing: border-box
+}
+*,:after,:before {
+    padding: 0;
+    margin: 0
+}
+
+body,html {
+  margin: 0;
+    background-color: #010101;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+label[for]{
+    cursor: pointer;
+}
+
+
+p {
+    font-size: 17px;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Oxygen Mono', monospace;   
+
+}
+h1,h2 {
+    position: relative;
+    display: block;
+    margin: 42px auto;
+    text-align: center;
+    font-size: 30px;
+    color: #2b37a3;
+  }
+
+/* content links */
+.text-links {
+    color: white;
+    font-weight: 500;
+}
+
+.text-links-big {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+/* Responsive Image */
+.img-fluid {
+    height: auto;
+    width: 600px;
+}
+/* Navigation Menu */
+.navbar{
+    background-color: #0000;
+    max-width: 100%;
+}
+.navbar ul li a{
+    margin-left:20px;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+
+}
+.navbar ul li a:hover {
+    border-bottom: 1px solid #ffffff; 
+    color: white;
+    font-weight: bold;
+  }
+
+  .navbar-dark .navbar-nav .nav-link{
+      color: #ffffff;
+
+  }
+  /* Home Page */
+
+  .sub-heading{
+    margin-top: -21px;
+}
+
+/* Team page */
+
+.img-responsive{
+    max-width: 100%;
+    max-height: auto;
+}   
+
+#team-content h4{
+    font-size: 17px;
+}
+#team-content p{
+    font-size: 16px;
+}
+
+#team-content  ul{
+    font-size: 15px;
+    text-align: center;
+}
+
+/*roadmap list */
+.rmlist ul li {
+    list-style-type: none;
+}
+
+
+
+/* Footer */
+#btn-disclaimer{
+    color: white;
+}
+
+.button-links .btn {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+/*ADD CLASSES N SHIT YOU NEED TO MAKE RESPONSIVE*/
+/* responsive at width 880px */
+@media only screen and (max-width: 800px) {
+        .cover{
+            height:250px;
+            width: 350px;
+        }
+        .img-responsive{
+            width: 100%;
+            height: auto;
+        }
+        .navbar ul li a{
+            /* margin-left:25px; */
+            /* justify-content: space-between; */
+            color: #ffffff;
+  }
+/* .footer .btn {
+    display: unset;
+    margin-bottom: 10px;
+    max-width: 600px;
+    width: 100%;
+
+}  */
+}
+/* Responsive for width 400px */
+@media only screen and (max-width: 400px) {
+    .cover{
+        height:250px;
+        width: 350px;
+    }
+    .img-responsive{
+        width: 100%;
+        height: auto;
+    }
+    .btn{
+        display: block;
+        margin-bottom: 10px;
+        max-width: 1000px;
+        width: 100%;
+    
+} 
+/* Responsive for width 250px */
+@media only screen and (max-width: 250px) {
+    .cover{
+        height:100px;
+        width: 150px;
+    }
+    .img-responsive{
+        width: 100%;
+        height: auto;
+    }
+
+}
